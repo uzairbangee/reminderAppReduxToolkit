@@ -1,16 +1,61 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li{
+  padding: 10px;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
+
+span{
+  cursor: pointer;
+}
+
+.input{
+  border-radius: 2px;
+  margin: 10px;
+    outline: 0;
+    border: none;
+    height: 29px;
+    padding: 0px 20px;
+    width: 80%;
+}
+
+.lists__area{
+  color: white;
+}
+
+.lists{
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-float infinite 3s ease-in-out;
   }
+}
+
+.box{
+  min-width: 360px;
+  border: 1px solid transparent;
+  background-color: teal;
+  border-radius: 5px;
+  min-height: 400px;
+  width: 460px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .App-header {
